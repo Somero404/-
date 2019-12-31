@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>页面导航</title>
+    <style type="text/css">
+        /*初始化页面*/
+        * {margin: 0; padding: 0;}
+        a {text-decoration: none;}
+        ul {list-style-type: none;}
+        /*导航栏*/
+        nav{
+            width: 1200px;
+            height: 42px;
+            margin: 0 auto;
+
+        }
+        nav .allcommodity{
+            width: 260px;
+            background-color: #fd5f56;
+            color: #ffffff;
+            line-height: 42px;
+            padding-left:30px;
+            box-sizing: border-box;
+            float: left;
+        }
+        nav .commodity-list #commodity-list-detail{
+            width: 940px;
+            box-sizing: border-box;
+            color: black;
+            background-color: #ffffff;
+            line-height: 42px;
+        }
+        nav .commodity-list>#commodity-list-detail>li{
+            float: left;
+            padding: 0 30px; 
+        }
+        nav #commodity-list-detail>li:hover #salary-detail{
+            display: block;
+        }
+        nav #salary-detail{
+            padding: 0 20px;
+            background: #f5f5f5;
+            position: absolute;
+            left: 720px;
+            display: none;
+        }
+        nav #commodity-list-detail>li:hover #online-study{
+            display: block;
+        }
+        nav #online-study{
+            padding: 0 20px;
+            background: #f5f5f5;
+            position: absolute;
+            left: 860px;
+            display: none;
+        }
+        nav #commodity-list-detail>li:hover #work{
+            display: block;
+        }
+        nav #work{
+            padding: 0 20px;
+            background: #f5f5f5;
+            position: absolute;
+            left: 1000px;
+            display: none;
+        }
+        nav #commodity-list-detail>li:hover #student{
+            display: block;
+        }
+        nav #student{
+            padding: 0 20px;
+            background: #f5f5f5;
+            position: absolute;
+            left: 1140px;
+            display: none;
+        }
+        nav #tri{
+            display: inline-block;
+            border: 5px solid black;
+            border-left-color: transparent; 
+            border-right-color: transparent; 
+            border-bottom-color: transparent; 
+        }
+        nav .commodity-detail{
+            width: 260px;
+            height: 420px;
+            color: #ffffff;
+            background: rgba(0, 0, 0, 0.6);
+            position: relative;
+            top: 47px;
+        }
+
+        nav .commodity-detail .detail-content li{
+            display: inline-block;
+            font-size: 10px;
+        }
+
+    </style>
+</head>
+<body>
+	<div class="">
+		<!-- 导航栏 -->
+		<nav>
+			<div class="commodity">
+				<div class="allcommodity">全部商品</div>
+				<div class="commodity-list">
+					<ul id="commodity-list-detail">
+						<li>首页</li>
+						<li>生活用品
+							<div id="tri"></div>
+							<ul id="salary-detail">
+								<li>衣服</li>
+								<li>厨房用品</li>
+								<li>衣架</li>
+							</ul>
+						</li>
+						<li>电子产品
+                            <div id="tri"></div>
+							<ul id="online-study">
+								<li>数码相机</li>
+								<li>手机</li>
+								<li>电脑</li>
+								<li>平板</li>
+							</ul></li>
+						<li>生鲜果蔬
+                            <div id="tri"></div>
+							<ul id="work">
+								<li>苹果</li>
+								<li>黄瓜</li>
+								<li>火龙果</li>
+							</ul></li>
+						<li>外卖专区
+                            <div id="tri"></div>
+							<ul id="student">
+								<li>饿了么</li>
+								<li>美团外卖</li>
+							</ul></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+    </div>
+</body>
+</html>

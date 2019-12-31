@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登陆</title>
+    <style type="text/css">
+        body{
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-image: url("../img/backgroundDefault.jpg");
+            background-size: cover;
+            margin: 0;
+            font-family: "Microsoft YaHei";
+            font-size: 32px;
+        }
+        .login {
+            height: 40%;
+            margin-top: 13%;
+        }
+        .welcome {
+            color: #d0deeb;
+            margin-bottom: 24px;
+        }
+        table {
+            text-align: center;
+        }
+        .input {
+            width: 450px;
+            height: 48px;
+            margin-bottom: 24px;
+            margin-top: 12px;
+            border-radius: 50px; 
+            background: transparent;
+            border:1px solid #ffffff;
+            outline: none;
+            font-size: 18px;
+            text-indent: 25px;
+            color: #d0deeb;
+        }
+        .button {
+            height: 50px;;
+            width: 450px;
+            margin-top: 12px;
+            border-radius: 50px; 
+            background-color: #0096e5;
+            border: 0;
+            font-size: 24px;
+            color: #d0deeb;
+            outline: none;
+        }
+        .forget a:link, .forget a:visited, .forget a:hover, .forget a:active, .forget a {
+            text-decoration: none;
+            color: #d0deeb;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="loginBody">
+            <form action="#">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <div class="welcome" id="welcome">
+                                <span>欢迎登陆</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <input type="text" class="input" id="userName" placeholder="请输入用户名"/>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <input type="password" class="input" id="password" placeholder="请输入密码" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <input type="button" value="登陆" class="button" id="button" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="forget" id="forget">
+                                <a href="#">忘记密码</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
